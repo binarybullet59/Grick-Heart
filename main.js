@@ -33,23 +33,15 @@ client.on('message', message =>{
         client.commands.get('tableadd').execute(message, args);
     } if(command === 'tableremove'){
         client.commands.get('tableremove').execute(message, args);
-    } if(command === 'rolld20'){
-        client.commands.get('rolld20').execute(message, args);
-    } if(command === 'rolld12'){
-        client.commands.get('rolld12').execute(message, args);
-    } if(command === 'rolld10'){
-        client.commands.get('rolld10').execute(message, args);
-    } if(command === 'rolld8'){
-        client.commands.get('rolld8').execute(message, args);
-    } if(command === 'rolld4'){
-        client.commands.get('rolld4').execute(message, args);
-    } if(command === 'rolld100'){
-        client.commands.get('rolld100').execute(message, args);
+    } if(command === 'roll'){
+        client.commands.get('roll').execute(message, args);
+    } if(command === 'spell'){
+        client.commands.get('spell').execute(message, args);
     } else if(command === 'help'){
         client.commands.get('help').execute(message, args);
     }
 });
  
-client.login(' --YOUR CLIENT TOKEN HERE-- ');
+client.login('NzgwODExNjQ2OTgxMTExODQ4.X70hgw.QSe85fynZPMfgjQdP0z8OV3jhT4');
  
  
