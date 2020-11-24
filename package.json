@@ -1,14 +1,23 @@
 {
-  "name": "Grick Heart",
-  "version": "3.0.0",
-  "description": "dnd discord bot for Gotta have that dex baby!",
+  "name": "grick-heart",
+  "version": "1.0.0",
+  "description": "a dnd discord bot",
   "main": "main.js",
+  "dependencies": {
+    "discord.js": "^12.4.1"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hydrostaticcog/Grick-Heart-Bot.git"
+  },
   "author": "hydrostaticcog",
   "license": "ISC",
-  "dependencies": {
-    "discord.js": "^12.4.1"
-  }
+  "bugs": {
+    "url": "https://github.com/hydrostaticcog/Grick-Heart-Bot/issues"
+  },
+  "homepage": "https://github.com/hydrostaticcog/Grick-Heart-Bot#readme"
 }
