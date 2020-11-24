@@ -1,6 +1,6 @@
 {
   "name": "Grick Heart",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "dnd discord bot for Gotta have that dex baby!",
   "main": "main.js",
   "scripts": {
