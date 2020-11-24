@@ -42,6 +42,6 @@ client.on('message', message =>{
     }
 });
  
-client.login(' --INSERT YOUR TOKEN HERE-- ');
+client.login('NzgwODExNjQ2OTgxMTExODQ4.X70hgw.JHUxD-icUiLKkhZs8h2_MEo3oio');
  
  
