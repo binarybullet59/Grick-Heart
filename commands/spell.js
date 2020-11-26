@@ -1,3 +1,4 @@
+const Discord = require('discord.js')
 module.exports = {
     name: 'spell',
     description: "This command looks up spells",
@@ -5,7 +6,7 @@ module.exports = {
         const data = 
         { "acidsplash": {
                 "name": "Acid Splash",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "cantrip",
                 "cantrip": true,
                 "school": "conjuration",
@@ -18,7 +19,7 @@ module.exports = {
             },
            "aid": { 
                 "name": "Aid",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "2",
                 "school": "abjuration",
                 "time": "1-action",
@@ -30,7 +31,7 @@ module.exports = {
             },
             "alarm": {
                 "name": "Alarm",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "1",
                 "school": "abjuration",
                 "ritual": true,
@@ -43,7 +44,7 @@ module.exports = {
             },
             "alterself": {
                 "name": "Alter Self",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "2",
                 "school": "transmutation",
                 "time": "1-action",
@@ -56,7 +57,7 @@ module.exports = {
             },
             "animalfriendship": {
                 "name": "Animal Friendship",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "1",
                 "school": "enchantment",
                 "time": "1-action",
@@ -68,7 +69,7 @@ module.exports = {
             },
             "animalmessenger": {
                 "name": "Animal Messenger",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "2",
                 "school": "enchantment",
                 "ritual": true,
@@ -81,7 +82,7 @@ module.exports = {
             },
             "animalshapes": {
                 "name": "Animal Shapes",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "8",
                 "school": "transmutation",
                 "time": "1-action",
@@ -95,7 +96,7 @@ module.exports = {
             },
             "animatedead": {
                 "name": "Animate Dead",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "3",
                 "school": "necromancy",
                 "time": "1-minute",
@@ -107,7 +108,7 @@ module.exports = {
             },
             "animateobjects": {
                 "name": "Animate Objects",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "5",
                 "school": "transmutation",
                 "time": "1-action",
@@ -123,7 +124,7 @@ module.exports = {
             },
             "antilifeshell": {
                 "name": "Antilife Shell",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "5",
                 "school": "abjuration",
                 "time": "1-action",
@@ -136,7 +137,7 @@ module.exports = {
             },
             "antimagicfield": {
                 "name": "Antimagic Field",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "8",
                 "school": "abjuration",
                 "time": "1-action",
@@ -152,7 +153,7 @@ module.exports = {
             },
             "arcaneeye": {
                 "name": "Arcane Eye",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "4",
                 "school": "divination",
                 "time": "1-action",
@@ -165,7 +166,7 @@ module.exports = {
             },
             "arcanelock": {
                 "name": "Arcane Lock",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "2",
                 "school": "abjuration",
                 "time": "1-action",
@@ -177,7 +178,7 @@ module.exports = {
             },
             "astralprojection": {
                 "name": "Astral Projection",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "9",
                 "school": "necromancy",
                 "time": "1-hour",
@@ -189,7 +190,7 @@ module.exports = {
             },
             "augury": {
                 "name": "Augury",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "2",
                 "school": "divination",
                 "ritual": true,
@@ -205,7 +206,7 @@ module.exports = {
             },
             "awaken": {
                 "name": "Awaken",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "5",
                 "school": "transmutation",
                 "time": "8-hours",
@@ -217,7 +218,7 @@ module.exports = {
             },
             "bane": {
                 "name": "Bane",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "1",
                 "school": "enchantment",
                 "time": "1-action",
@@ -230,7 +231,7 @@ module.exports = {
             },
             "banishment": {
                 "name": "Banishment",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "4",
                 "school": "abjuration",
                 "time": "1-action",
@@ -243,7 +244,7 @@ module.exports = {
             },
             "barkskin": {
                 "name": "Barkskin",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "2",
                 "school": "transmutation",
                 "time": "1-action",
@@ -256,7 +257,7 @@ module.exports = {
             },
             "beaconofhope": {
                 "name": "Beacon of Hope",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "3",
                 "school": "abjuration",
                 "time": "1-action",
@@ -269,7 +270,7 @@ module.exports = {
             },
             "bestowcurse": {
                 "name": "Bestow Curse",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "3",
                 "school": "necromancy",
                 "time": "1-action",
@@ -286,7 +287,7 @@ module.exports = {
             },
             "bladebarrier": {
                 "name": "Blade Barrier",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "6",
                 "school": "evocation",
                 "time": "1-action",
@@ -300,7 +301,7 @@ module.exports = {
             },
             "bless": {
                 "name": "Bless",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "1",
                 "school": "enchantment",
                 "time": "1-action",
@@ -313,7 +314,7 @@ module.exports = {
             },
             "blight":{
                 "name": "Blight",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "4",
                 "school": "necromancy",
                 "time": "1-action",
@@ -326,7 +327,7 @@ module.exports = {
             },
             "blink": {
                 "name": "Blink",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "3",
                 "school": "transmutation",
                 "time": "1-action",
@@ -338,7 +339,7 @@ module.exports = {
             },
             "blur": {
                 "name": "Blur",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "2",
                 "school": "illusion",
                 "time": "1-action",
@@ -351,7 +352,7 @@ module.exports = {
             },
             "brandingsmite": {
                 "name": "Branding Smite",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "2",
                 "school": "evocation",
                 "time": "1-bonus-action",
@@ -366,7 +367,7 @@ module.exports = {
             },
             "burninghands": {
                 "name": "Burning Hands",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "1",
                 "school": "evocation",
                 "time": "1-action",
@@ -378,7 +379,7 @@ module.exports = {
             },
             "calllightning": {
                 "name": "Call Lightning",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "3",
                 "school": "conjuration",
                 "time": "1-action",
@@ -391,7 +392,7 @@ module.exports = {
             },
             "calmemotions":{
                 "name": "Calm Emotions",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "2",
                 "school": "enchantment",
                 "time": "1-action",
@@ -404,7 +405,7 @@ module.exports = {
             },
             "chainlightning": {
                 "name": "Chain Lightning",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "6",
                 "school": "evocation",
                 "time": "1-action",
@@ -416,7 +417,7 @@ module.exports = {
             },
             "chainlightning": {
                 "name": "Charm Person",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "1",
                 "school": "enchantment",
                 "time": "1-action",
@@ -428,7 +429,7 @@ module.exports = {
             },
             "chilltouch": {
                 "name": "Chill Touch",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "cantrip",
                 "cantrip": true,
                 "school": "necromancy",
@@ -442,7 +443,7 @@ module.exports = {
             },
             "circleofdeath": {
                 "name": "Circle of Death",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "6",
                 "school": "necromancy",
                 "time": "1-action",
@@ -455,7 +456,7 @@ module.exports = {
             },
             "clairvoyance": {
                 "name": "Clairvoyance",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "3",
                 "school": "divination",
                 "time": "10-minutes",
@@ -468,7 +469,7 @@ module.exports = {
             },
             "clone": {
                 "name": "Clone",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "8",
                 "school": "necromancy",
                 "time": "1-hour",
@@ -481,7 +482,7 @@ module.exports = {
             },
             "cloudkill": {
                 "name": "Cloudkill",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "5",
                 "school": "conjuration",
                 "time": "1-action",
@@ -494,7 +495,7 @@ module.exports = {
             },
             "colorspray": {
                 "name": "Color Spray",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "1",
                 "school": "illusion",
                 "time": "1-action",
@@ -506,7 +507,7 @@ module.exports = {
             },
             "command": {
                 "name": "Command",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "1",
                 "school": "enchantment",
                 "time": "1-action",
@@ -521,7 +522,7 @@ module.exports = {
             },
             "commune": {
                 "name": "Commune",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "5",
                 "school": "divination",
                 "ritual": true,
@@ -534,7 +535,7 @@ module.exports = {
             },
             "communewithnature":{
                 "name": "Commune with Nature",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "5",
                 "school": "divination",
                 "ritual": true,
@@ -547,7 +548,7 @@ module.exports = {
             },
             "comprehendlangueages": {
                 "name": "Comprehend Languages",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "1",
                 "school": "divination",
                 "ritual": true,
@@ -560,7 +561,7 @@ module.exports = {
             },
             "compulsion": {
                 "name": "Compulsion",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "4",
                 "school": "enchantment",
                 "time": "1-action",
@@ -574,7 +575,7 @@ module.exports = {
             },
             "coneofcold": {
                 "name": "Cone of Cold",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "5",
                 "school": "evocation",
                 "time": "1-action",
@@ -586,7 +587,7 @@ module.exports = {
             },
             "confusion": {
                 "name": "Confusion",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "4",
                 "school": "enchantment",
                 "time": "1-action",
@@ -602,7 +603,7 @@ module.exports = {
             },
             "conjureanimals": {
                 "name": "Conjure Animals",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "3",
                 "school": "conjuration",
                 "time": "1-action",
@@ -618,7 +619,7 @@ module.exports = {
             },
             "conjurecelestials": {
                 "name": "Conjure Celestial",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "7",
                 "school": "conjuration",
                 "time": "1-minute",
@@ -632,7 +633,7 @@ module.exports = {
             },
             "conjurelemental":{
                 "name": "Conjure Elemental",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "5",
                 "school": "conjuration",
                 "time": "1-minute",
@@ -645,7 +646,7 @@ module.exports = {
             },
             "conjurefey": {
                 "name": "Conjure Fey",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "6",
                 "school": "conjuration",
                 "time": "1-minute",
@@ -658,7 +659,7 @@ module.exports = {
             },
             "conjureminorelementals": {
                 "name": "Conjure Minor Elementals",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "4",
                 "school": "conjuration",
                 "time": "1-minute",
@@ -674,7 +675,7 @@ module.exports = {
             },
             "conjurewoodlandbeings": {
                 "name": "Conjure Woodland Beings",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "4",
                 "school": "conjuration",
                 "time": "1-action",
@@ -690,7 +691,7 @@ module.exports = {
             },
             "contactotherplane": {
                 "name": "Contact Other Plane",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "5",
                 "school": "divination",
                 "ritual": true,
@@ -703,7 +704,7 @@ module.exports = {
             },
             "contaigion": {
                 "name": "Contagion",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "5",
                 "school": "necromancy",
                 "time": "1-action",
@@ -718,7 +719,7 @@ module.exports = {
             },
             "contingency": {
                 "name": "Contingency",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "6",
                 "school": "evocation",
                 "time": "10-minutes",
@@ -731,7 +732,7 @@ module.exports = {
             },
             "continualflame": {
                 "name": "Continual Flame",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "2",
                 "school": "evocation",
                 "time": "1-action",
@@ -743,7 +744,7 @@ module.exports = {
             },
             "controlwater":{
                 "name": "Control Water",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "4",
                 "school": "transmutation",
                 "time": "1-action",
@@ -756,7 +757,7 @@ module.exports = {
             },
             "controlweather": {
                 "name": "Control Weather",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "8",
                 "school": "transmutation",
                 "time": "10-minutes",
@@ -769,7 +770,7 @@ module.exports = {
             },
             "counterspell": {
                 "name": "Counterspell",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "3",
                 "school": "abjuration",
                 "time": "1-reaction",
@@ -781,7 +782,7 @@ module.exports = {
             },
             "createfoodandwater": {
                 "name": "Create Food and Water",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "3",
                 "school": "conjuration",
                 "time": "1-action",
@@ -793,7 +794,7 @@ module.exports = {
             },
             "createundead": {
                 "name": "Create Undead",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "6",
                 "school": "necromancy",
                 "time": "1-minute",
@@ -805,7 +806,7 @@ module.exports = {
             },
             "createordestroywater": {
                 "name": "Create or Destroy Water",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "1",
                 "school": "transmutation",
                 "time": "1-action",
@@ -817,7 +818,7 @@ module.exports = {
             },
             "creation": {
                 "name": "Creation",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "5",
                 "school": "illusion",
                 "time": "1-minute",
@@ -850,7 +851,7 @@ module.exports = {
             },
             "curewounds": {
                 "name": "Cure Wounds",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "1",
                 "school": "evocation",
                 "time": "1-action",
@@ -862,7 +863,7 @@ module.exports = {
             },
             "dancinglights": {
                 "name": "Dancing Lights",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "cantrip",
                 "cantrip": true,
                 "school": "evocation",
@@ -876,7 +877,7 @@ module.exports = {
             },
             "darkness": {
                 "name": "Darkness",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "2",
                 "school": "evocation",
                 "time": "1-action",
@@ -889,7 +890,7 @@ module.exports = {
             },
             "darkvision": {
                 "name": "Darkvision",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "2",
                 "school": "transmutation",
                 "time": "1-action",
@@ -901,7 +902,7 @@ module.exports = {
             },
             "daylight": {
                 "name": "Daylight",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "3",
                 "school": "evocation",
                 "time": "1-action",
@@ -913,7 +914,7 @@ module.exports = {
             },
             "deathward": {
                 "name": "Death Ward",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "4",
                 "school": "abjuration",
                 "time": "1-action",
@@ -925,7 +926,7 @@ module.exports = {
             },
             "delayedblastfireball": {
                 "name": "Delayed Blast Fireball",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "7",
                 "school": "evocation",
                 "time": "1-action",
@@ -938,7 +939,7 @@ module.exports = {
             },
             "demiplane": {
                 "name": "Demiplane",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "8",
                 "school": "conjuration",
                 "time": "1-action",
@@ -950,7 +951,7 @@ module.exports = {
             },
             "detectevilandgood": {
                 "name": "Detect Evil and Good",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "1",
                 "school": "divination",
                 "time": "1-action",
@@ -963,7 +964,7 @@ module.exports = {
             },
             "detectmagic": {
                 "name": "Detect Magic",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "1",
                 "school": "divination",
                 "ritual": true,
@@ -977,7 +978,7 @@ module.exports = {
             },
             "detectpoisonanddisease": {
                 "name": "Detect Poison and Disease",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "1",
                 "school": "divination",
                 "time": "1-action",
@@ -990,7 +991,7 @@ module.exports = {
             },
             "detectthoughts": {
                 "name": "Detect Thoughts",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "2",
                 "school": "divination",
                 "time": "1-action",
@@ -1003,7 +1004,7 @@ module.exports = {
             },
             "dimensiondoor": {
                 "name": "Dimension Door",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "4",
                 "school": "conjuration",
                 "time": "1-action",
@@ -1015,7 +1016,7 @@ module.exports = {
             },
             "disguiseself": {
                 "name": "Disguise Self",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "1",
                 "school": "illusion",
                 "time": "1-action",
@@ -1027,7 +1028,7 @@ module.exports = {
             },
             "disentegrate": {
                 "name": "Disintegrate",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "6",
                 "school": "transmutation",
                 "time": "1-action",
@@ -1039,7 +1040,7 @@ module.exports = {
             },
             "dispelevilandgood": {
                 "name": "Dispel Evil and Good",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "5",
                 "school": "abjuration",
                 "time": "1-action",
@@ -1052,7 +1053,7 @@ module.exports = {
             },
             "dispelmagic": {
                 "name": "Dispel Magic",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "3",
                 "school": "abjuration",
                 "time": "1-action",
@@ -1064,7 +1065,7 @@ module.exports = {
             },
             "divination": {
                 "name": "Divination",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "4",
                 "school": "divination",
                 "ritual": true,
@@ -1077,7 +1078,7 @@ module.exports = {
             },
             "divinefavor": {
                 "name": "Divine Favor",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "1",
                 "school": "evocation",
                 "time": "1-bonus-action",
@@ -1091,7 +1092,7 @@ module.exports = {
             },
             "divinceword": {
                 "name": "Divine Word",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "7",
                 "school": "evocation",
                 "time": "1-bonus-action",
@@ -1107,7 +1108,7 @@ module.exports = {
             },
             "dominatebeast": {
                 "name": "Dominate Beast",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "4",
                 "school": "enchantment",
                 "time": "1-action",
@@ -1120,7 +1121,7 @@ module.exports = {
             },
             "dominatemonster": {
                 "name": "Dominate Monster",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "8",
                 "school": "enchantment",
                 "time": "1-action",
@@ -1133,7 +1134,7 @@ module.exports = {
             },
             "dominateperson": {
                 "name": "Dominate Person",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "5",
                 "school": "enchantment",
                 "time": "1-action",
@@ -1146,7 +1147,7 @@ module.exports = {
             },
             "dream": {
                 "name": "Dream",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "5",
                 "school": "illusion",
                 "time": "1-minute",
@@ -1158,7 +1159,7 @@ module.exports = {
             },
             "druidcraft": {
                 "name": "Druidcraft",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "cantrip",
                 "cantrip": true,
                 "school": "transmutation",
@@ -1175,7 +1176,7 @@ module.exports = {
             },
             "earthquake": {
                 "name": "Earthquake",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "8",
                 "school": "evocation",
                 "time": "1-action",
@@ -1188,7 +1189,7 @@ module.exports = {
             },
             "eldritchblast": {
                 "name": "Eldritch Blast",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "cantrip",
                 "cantrip": true,
                 "school": "evocation",
@@ -1202,7 +1203,7 @@ module.exports = {
             },
             "enhanceability": {
                 "name": "Enhance Ability",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "2",
                 "school": "transmutation",
                 "time": "1-action",
@@ -1218,7 +1219,7 @@ module.exports = {
             },
             "entangle": {
                 "name": "Entangle",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "1",
                 "school": "conjuration",
                 "time": "1-action",
@@ -1232,7 +1233,7 @@ module.exports = {
             },
             "enthrall": {
                 "name": "Enthrall",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "2",
                 "school": "enchantment",
                 "time": "1-action",
@@ -1244,7 +1245,7 @@ module.exports = {
             },
             "etherealness": {
                 "name": "Etherealness",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "7",
                 "school": "transmutation",
                 "time": "1-action",
@@ -1256,7 +1257,7 @@ module.exports = {
             },
             "expeditousretreat": {
                 "name": "Expeditious Retreat",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "1",
                 "school": "transmutation",
                 "time": "1-bonus-action",
@@ -1269,7 +1270,7 @@ module.exports = {
             },
             "eyebite": {
                 "name": "Eyebite",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "6",
                 "school": "necromancy",
                 "time": "1-action",
@@ -1282,7 +1283,7 @@ module.exports = {
             },
             "fabricate": {
                 "name": "Fabricate",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "4",
                 "school": "transmutation",
                 "time": "10-minutes",
@@ -1295,7 +1296,7 @@ module.exports = {
             },
             "faeriefire": {
                 "name": "Faerie Fire",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "1",
                 "school": "evocation",
                 "time": "1-action",
@@ -1308,7 +1309,7 @@ module.exports = {
             },
             "falselife": {
                 "name": "False Life",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "1",
                 "school": "necromancy",
                 "time": "1-action",
@@ -1320,7 +1321,7 @@ module.exports = {
             },
             "fear": {
                 "name": "Fear",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "3",
                 "school": "illusion",
                 "time": "1-action",
@@ -1333,7 +1334,7 @@ module.exports = {
             },
             "featherfall": {
                 "name": "Feather Fall",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "1",
                 "school": "transmutation",
                 "time": "1-reaction",
@@ -1345,7 +1346,7 @@ module.exports = {
             },
             "feeblemind": {
                 "name": "Feeblemind",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "8",
                 "school": "enchantment",
                 "time": "1-action",
@@ -1357,7 +1358,7 @@ module.exports = {
             },
             "findfamiliar": {
                 "name": "Find Familiar",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "1",
                 "school": "conjuration",
                 "ritual": true,
@@ -1371,7 +1372,7 @@ module.exports = {
             },
             "findsteed": {
                 "name": "Find Steed",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "2",
                 "school": "conjuration",
                 "time": "10-minutes",
@@ -1384,7 +1385,7 @@ module.exports = {
             },
             "findtraps": {
                 "name": "Find Traps",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "2",
                 "school": "divination",
                 "time": "1-action",
@@ -1396,7 +1397,7 @@ module.exports = {
             },
             "findthepath": {
                 "name": "Find the Path",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "6",
                 "school": "divination",
                 "time": "1-minute",
@@ -1409,7 +1410,7 @@ module.exports = {
             },
             "fingerofdeath": {
                 "name": "Finger of Death",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "7",
                 "school": "necromancy",
                 "time": "1-action",
@@ -1422,7 +1423,7 @@ module.exports = {
             },
             "firebolt": {
                 "name": "Fire Bolt",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "cantrip",
                 "cantrip": true,
                 "school": "evocation",
@@ -1435,7 +1436,7 @@ module.exports = {
             },
             "fireshield": {
                 "name": "Fire Shield",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "4",
                 "school": "evocation",
                 "time": "1-action",
@@ -1447,7 +1448,7 @@ module.exports = {
             },
             "firestorm": {
                 "name": "Fire Storm",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "7",
                 "school": "evocation",
                 "time": "1-action",
@@ -1459,7 +1460,7 @@ module.exports = {
             },
             "fireball": {
                 "name": "Fireball",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "3",
                 "school": "evocation",
                 "time": "1-action",
@@ -1471,7 +1472,7 @@ module.exports = {
             },
             "flameblade": {
                 "name": "Flame Blade",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "2",
                 "school": "evocation",
                 "time": "1-bonus-action",
@@ -1485,7 +1486,7 @@ module.exports = {
             },
             "flamestrike": {
                 "name": "Flame Strike",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "5",
                 "school": "evocation",
                 "time": "1-action",
@@ -1498,7 +1499,7 @@ module.exports = {
             },
             "flamingsphere": {
                 "name": "Flaming Sphere",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "2",
                 "school": "conjuration",
                 "time": "1-action",
@@ -1511,7 +1512,7 @@ module.exports = {
             },
             "fleshtostone": {
                 "name": "Flesh to Stone",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "6",
                 "school": "transmutation",
                 "time": "1-action",
@@ -1524,7 +1525,7 @@ module.exports = {
             },
             "fly": {
                 "name": "Fly",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "3",
                 "school": "transmutation",
                 "time": "1-action",
@@ -1537,7 +1538,7 @@ module.exports = {
             },
             "fogcloud": {
                 "name": "Fog Cloud",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "1",
                 "school": "conjuration",
                 "time": "1-action",
@@ -1550,7 +1551,7 @@ module.exports = {
             },
             "forbiddence": {
                 "name": "Forbiddance",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "6",
                 "school": "abjuration",
                 "ritual": true,
@@ -1565,7 +1566,7 @@ module.exports = {
             },
             "forcecage": {
                 "name": "Forcecage",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "7",
                 "school": "evocation",
                 "time": "1-action",
@@ -1577,7 +1578,7 @@ module.exports = {
             },
             "foresight": {
                 "name": "Foresight",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "9",
                 "school": "divination",
                 "time": "1-minute",
@@ -1589,7 +1590,7 @@ module.exports = {
             },
             "freedomofmovement": {
                 "name": "Freedom of Movement",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "4",
                 "school": "abjuration",
                 "time": "1-action",
@@ -1601,7 +1602,7 @@ module.exports = {
             },
             "gaseousform": {
                 "name": "Gaseous Form",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "3",
                 "school": "transmutation",
                 "time": "1-action",
@@ -1614,7 +1615,7 @@ module.exports = {
             },
             "gate": {
                 "name": "Gate",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "9",
                 "school": "conjuration",
                 "time": "1-action",
@@ -1627,7 +1628,7 @@ module.exports = {
             },
             "geas": {
                 "name": "Geas",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "5",
                 "school": "enchantment",
                 "time": "1-minute",
@@ -1639,7 +1640,7 @@ module.exports = {
             },
             "gentleresponse": {
                 "name": "Gentle Repose",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "2",
                 "school": "necromancy",
                 "ritual": true,
@@ -1652,7 +1653,7 @@ module.exports = {
             },
             "giantinsect": {
                 "name": "Giant Insect",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "4",
                 "school": "transmutation",
                 "time": "1-action",
@@ -1666,7 +1667,7 @@ module.exports = {
             },
             "glibness": {
                 "name": "Glibness",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "8",
                 "school": "transmutation",
                 "time": "1-action",
@@ -1678,7 +1679,7 @@ module.exports = {
             },
             "globeofinvulerability": {
                 "name": "Globe of Invulnerability",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "6",
                 "school": "abjuration",
                 "time": "1-action",
@@ -1691,7 +1692,7 @@ module.exports = {
             },
             "glyphofwarding": {
                 "name": "Glyph of Warding",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "3",
                 "school": "abjuration",
                 "time": "1-hour",
@@ -1707,7 +1708,7 @@ module.exports = {
             },
             "goodberry": {
                 "name": "Goodberry",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "1",
                 "school": "transmutation",
                 "time": "1-action",
@@ -1719,7 +1720,7 @@ module.exports = {
             },
             "grease": {
                 "name": "Grease",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "1",
                 "school": "conjuration",
                 "time": "1-action",
@@ -1732,7 +1733,7 @@ module.exports = {
             },
             "greaterinvisibility": {
                 "name": "Greater Invisibility",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "4",
                 "school": "illusion",
                 "time": "1-action",
@@ -1745,7 +1746,7 @@ module.exports = {
             },
             "greaterrestoration": {
                 "name": "Greater Restoration",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "5",
                 "school": "abjuration",
                 "time": "1-action",
@@ -1760,7 +1761,7 @@ module.exports = {
             },
             "guardianoffaith": {
                 "name": "Guardian of Faith",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "4",
                 "school": "conjuration",
                 "time": "1-action",
@@ -1773,7 +1774,7 @@ module.exports = {
             },
             "guardsandwards": {
                 "name": "Guards and Wards",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "6",
                 "school": "abjuration",
                 "time": "10-minutes",
@@ -1791,7 +1792,7 @@ module.exports = {
             },
             "guidance": {
                 "name": "Guidance",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "cantrip",
                 "cantrip": true,
                 "school": "divination",
@@ -1805,7 +1806,7 @@ module.exports = {
             },
             "guidingbolt": {
                 "name": "Guiding Bolt",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "1",
                 "school": "evocation",
                 "time": "1-action",
@@ -1819,7 +1820,7 @@ module.exports = {
             },
             "gustofwind": {
                 "name": "Gust of Wind",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "2",
                 "school": "evocation",
                 "time": "1-action",
@@ -1832,7 +1833,7 @@ module.exports = {
             },
             "hallow": {
                 "name": "Hallow",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "5",
                 "school": "evocation",
                 "time": "24-hours",
@@ -1847,7 +1848,7 @@ module.exports = {
             },
             "hallucinatoryterrain": {
                 "name": "Hallucinatory Terrain",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "4",
                 "school": "illusion",
                 "time": "10-minutes",
@@ -1859,7 +1860,7 @@ module.exports = {
             },
             "harm": {
                 "name": "Harm",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "6",
                 "school": "necromancy",
                 "time": "1-action",
@@ -1873,7 +1874,7 @@ module.exports = {
             },
             "haste": {
                 "name": "Haste",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "3",
                 "school": "transmutation",
                 "time": "1-action",
@@ -1886,7 +1887,7 @@ module.exports = {
             },
             "heal": {
                 "name": "Heal",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "6",
                 "school": "evocation",
                 "time": "1-action",
@@ -1898,7 +1899,7 @@ module.exports = {
             },
             "healingword": {
                 "name": "Healing Word",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "1",
                 "school": "evocation",
                 "time": "1-bonus-action",
@@ -1910,7 +1911,7 @@ module.exports = {
             },
             "heatmetal": {
                 "name": "Heat Metal",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "2",
                 "school": "transmutation",
                 "time": "1-action",
@@ -1923,7 +1924,7 @@ module.exports = {
             },
             "hellishrebuke": {
                 "name": "Hellish Rebuke",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "1",
                 "school": "evocation",
                 "time": "1-reaction",
@@ -1935,7 +1936,7 @@ module.exports = {
             },
             "heroesfeast": {
                 "name": "Heroes' Feast",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "6",
                 "school": "conjuration",
                 "time": "10-minutes",
@@ -1947,7 +1948,7 @@ module.exports = {
             },
             "heroism":{
                 "name": "Heroism",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "1",
                 "school": "enchantment",
                 "time": "1-action",
@@ -1960,7 +1961,7 @@ module.exports = {
             },
             "holdmonster": {
                 "name": "Hold Monster",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "5",
                 "school": "enchantment",
                 "time": "1-action",
@@ -1973,7 +1974,7 @@ module.exports = {
             },
             "holdperson": {
                 "name": "Hold Person",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "2",
                 "school": "enchantment",
                 "time": "1-action",
@@ -1986,7 +1987,7 @@ module.exports = {
             },
             "holyaura": {
                 "name": "Holy Aura",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "8",
                 "school": "abjuration",
                 "time": "1-action",
@@ -2000,7 +2001,7 @@ module.exports = {
             },
             "huntersmark": {
                 "name": "Hunter's Mark",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "1",
                 "school": "divination",
                 "time": "1-bonus-action",
@@ -2013,7 +2014,7 @@ module.exports = {
             },
             "hypnoticpattern": {
                 "name": "Hypnotic Pattern",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "3",
                 "school": "illusion",
                 "time": "1-action",
@@ -2026,7 +2027,7 @@ module.exports = {
             },
             "icestorm": {
                 "name": "Ice Storm",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "4",
                 "school": "evocation",
                 "time": "1-action",
@@ -2038,7 +2039,7 @@ module.exports = {
             },
             "identify": {
                 "name": "Identify",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "1",
                 "school": "divination",
                 "ritual": true,
@@ -2051,7 +2052,7 @@ module.exports = {
             },
             "illusoryscript": {
                 "name": "Illusory Script",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "1",
                 "school": "illusion",
                 "ritual": true,
@@ -2064,7 +2065,7 @@ module.exports = {
             },
             "imprisonment": {
                 "name": "Imprisonment",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "9",
                 "school": "abjuration",
                 "time": "1-minute",
@@ -2076,7 +2077,7 @@ module.exports = {
             },
             "incendiarycloud": {
                 "name": "Incendiary Cloud",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "8",
                 "school": "conjuration",
                 "time": "1-action",
@@ -2089,7 +2090,7 @@ module.exports = {
             },
             "inflictwounds": {
                 "name": "Inflict Wounds",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "1",
                 "school": "necromancy",
                 "time": "1-action",
@@ -2102,7 +2103,7 @@ module.exports = {
             },
             "insectplague":{
                 "name": "Insect Plague",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "5",
                 "school": "conjuration",
                 "time": "1-action",
@@ -2115,7 +2116,7 @@ module.exports = {
             },
             "invisibility": {
                 "name": "Invisibility",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "2",
                 "school": "illusion",
                 "time": "1-action",
@@ -2128,7 +2129,7 @@ module.exports = {
             },
             "jump": {
                 "name": "Jump",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "1",
                 "school": "transmutation",
                 "time": "1-action",
@@ -2140,7 +2141,7 @@ module.exports = {
             },
             "knock":{
                 "name": "Knock",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "2",
                 "school": "transmutation",
                 "time": "1-action",
@@ -2152,7 +2153,7 @@ module.exports = {
             },
             "legendlore": {
                 "name": "Legend Lore",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "5",
                 "school": "divination",
                 "time": "10-minutes",
@@ -2164,7 +2165,7 @@ module.exports = {
             },
             "lesserrestoration": {
                 "name": "Lesser Restoration",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "2",
                 "school": "abjuration",
                 "time": "1-action",
@@ -2176,7 +2177,7 @@ module.exports = {
             },
             "levitate": {
                 "name": "Levitate",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "2",
                 "school": "transmutation",
                 "time": "1-action",
@@ -2189,7 +2190,7 @@ module.exports = {
             },
             "light": {
                 "name": "Light",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "cantrip",
                 "cantrip": true,
                 "school": "evocation",
@@ -2202,7 +2203,7 @@ module.exports = {
             },
             "lightningbolt": {
                 "name": "Lightning Bolt",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "3",
                 "school": "evocation",
                 "time": "1-action",
@@ -2214,7 +2215,7 @@ module.exports = {
             },
             "locateanimalsorplants": {
                 "name": "Locate Animals or Plants",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "2",
                 "school": "divination",
                 "ritual": true,
@@ -2227,7 +2228,7 @@ module.exports = {
             },
             "locatecreature": {
                 "name": "Locate Creature",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "4",
                 "school": "divination",
                 "time": "1-action",
@@ -2240,7 +2241,7 @@ module.exports = {
             },
             "locateobject": {
                 "name": "Locate Object",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "2",
                 "school": "divination",
                 "time": "1-action",
@@ -2253,7 +2254,7 @@ module.exports = {
             },
             "lonstrider": {
                 "name": "Longstrider",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "1",
                 "school": "transmutation",
                 "time": "1-action",
@@ -2265,7 +2266,7 @@ module.exports = {
             },
             "magearmor": {
                 "name": "Mage Armor",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "1",
                 "school": "abjuration",
                 "time": "1-action",
@@ -2277,7 +2278,7 @@ module.exports = {
             },
             "magehand": {
                 "name": "Mage Hand",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "cantrip",
                 "cantrip": true,
                 "school": "conjuration",
@@ -2290,7 +2291,7 @@ module.exports = {
             },
             "magiccircle": {
                 "name": "Magic Circle",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "3",
                 "school": "abjuration",
                 "time": "1-minute",
@@ -2305,7 +2306,7 @@ module.exports = {
             },
             "magicjar": {
                 "name": "Magic Jar",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "6",
                 "school": "necromancy",
                 "time": "1-minute",
@@ -2318,7 +2319,7 @@ module.exports = {
             },
             "magicmissle": {
                 "name": "Magic Missile",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "1",
                 "school": "evocation",
                 "time": "1-action",
@@ -2330,7 +2331,7 @@ module.exports = {
             },
             "magicmouth": {
                 "name": "Magic Mouth",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "2",
                 "school": "illusion",
                 "ritual": true,
@@ -2343,7 +2344,7 @@ module.exports = {
             },
             "magicweapon": {
                 "name": "Magic Weapon",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "2",
                 "school": "transmutation",
                 "time": "1-bonus-action",
@@ -2356,7 +2357,7 @@ module.exports = {
             },
             "majorimage": {
                 "name": "Major Image",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "3",
                 "school": "illusion",
                 "time": "1-action",
@@ -2369,7 +2370,7 @@ module.exports = {
             },
             "masscurewounds": {
                 "name": "Mass Cure Wounds",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "5",
                 "school": "evocation",
                 "time": "1-action",
@@ -2381,7 +2382,7 @@ module.exports = {
             },
             "massheal": {
                 "name": "Mass Heal",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "9",
                 "school": "evocation",
                 "time": "1-action",
@@ -2394,7 +2395,7 @@ module.exports = {
             },
             "masshealingword": {
                 "name": "Mass Healing Word",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "3",
                 "school": "evocation",
                 "time": "1-bonus-action",
@@ -2407,7 +2408,7 @@ module.exports = {
             },
             "masssuggestion": {
                 "name": "Mass Suggestion",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "6",
                 "school": "enchantment",
                 "time": "1-action",
@@ -2419,7 +2420,7 @@ module.exports = {
             },
             "maze": {
                 "name": "Maze",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "8",
                 "school": "conjuration",
                 "time": "1-action",
@@ -2433,7 +2434,7 @@ module.exports = {
             },
             "meldintostone": {
                 "name": "Meld into Stone",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "3",
                 "school": "transmutation",
                 "ritual": true,
@@ -2446,7 +2447,7 @@ module.exports = {
             },
             "mending": {
                 "name": "Mending",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "cantrip",
                 "cantrip": true,
                 "school": "transmutation",
@@ -2459,7 +2460,7 @@ module.exports = {
             },
             "message": {
                 "name": "Message",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "cantrip",
                 "cantrip": true,
                 "school": "transmutation",
@@ -2472,7 +2473,7 @@ module.exports = {
             },
             "meteorswarm": {
                 "name": "Meteor Swarm",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "9",
                 "school": "evocation",
                 "time": "1-action",
@@ -2484,7 +2485,7 @@ module.exports = {
             },
             "mindblank": {
                 "name": "Mind Blank",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "8",
                 "school": "abjuration",
                 "time": "1-action",
@@ -2496,7 +2497,7 @@ module.exports = {
             },
             "minorillusion": {
                 "name": "Minor Illusion",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "cantrip",
                 "cantrip": true,
                 "school": "illusion",
@@ -2509,7 +2510,7 @@ module.exports = {
             },
             "miragearcane": {
                 "name": "Mirage Arcane",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "7",
                 "school": "illusion",
                 "time": "10-minutes",
@@ -2521,7 +2522,7 @@ module.exports = {
             },
             "mirrorimage": {
                 "name": "Mirror Image",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "2",
                 "school": "illusion",
                 "time": "1-action",
@@ -2533,7 +2534,7 @@ module.exports = {
             },
             "mislead": {
                 "name": "Mislead",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "5",
                 "school": "illusion",
                 "time": "1-action",
@@ -2546,7 +2547,7 @@ module.exports = {
             },
             "mistystep": {
                 "name": "Misty Step",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "2",
                 "school": "conjuration",
                 "time": "1-bonus-action",
@@ -2558,7 +2559,7 @@ module.exports = {
             },
             "modifymemory": {
                 "name": "Modify Memory",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "5",
                 "school": "enchantment",
                 "time": "1-action",
@@ -2572,7 +2573,7 @@ module.exports = {
             },
             "moonbeam": {
                 "name": "Moonbeam",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "2",
                 "school": "evocation",
                 "time": "1-action",
@@ -2586,7 +2587,7 @@ module.exports = {
             },
             "moveearth": {
                 "name": "Move Earth",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "6",
                 "school": "transmutation",
                 "time": "1-action",
@@ -2599,7 +2600,7 @@ module.exports = {
             },
             "nondetection": {
                 "name": "Nondetection",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "3",
                 "school": "abjuration",
                 "time": "1-action",
@@ -2611,7 +2612,7 @@ module.exports = {
             },
             "passwall": {
                 "name": "Passwall",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "5",
                 "school": "transmutation",
                 "time": "1-action",
@@ -2623,7 +2624,7 @@ module.exports = {
             },
             "phantasmalkiller": {
                 "name": "Phantasmal Killer",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "4",
                 "school": "illusion",
                 "time": "1-action",
@@ -2636,7 +2637,7 @@ module.exports = {
             },
             "phantomstead": {
                 "name": "Phantom Steed",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "3",
                 "school": "illusion",
                 "ritual": true,
@@ -2649,7 +2650,7 @@ module.exports = {
             },
             "planarally": {
                 "name": "Planar Ally",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "6",
                 "school": "conjuration",
                 "time": "10-minutes",
@@ -2662,7 +2663,7 @@ module.exports = {
             },
             "planarbinding": {
                 "name": "Planar Binding",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "5",
                 "school": "abjuration",
                 "time": "1-hour",
@@ -2674,7 +2675,7 @@ module.exports = {
             },
             "planeshift": {
                 "name": "Plane Shift",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "7",
                 "school": "conjuration",
                 "time": "1-action",
@@ -2686,7 +2687,7 @@ module.exports = {
             },
             "plantgrowth": {
                 "name": "Plant Growth",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "3",
                 "school": "transmutation",
                 "time": "1-action or 8-hours",
@@ -2698,7 +2699,7 @@ module.exports = {
             },
             "poisonspray": {
                 "name": "Poison Spray",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "cantrip",
                 "cantrip": true,
                 "school": "conjuration",
@@ -2711,7 +2712,7 @@ module.exports = {
             },
             "polymorph": {
                 "name": "Polymorph",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "4",
                 "school": "transmutation",
                 "time": "1-action",
@@ -2724,7 +2725,7 @@ module.exports = {
             },
             "powerwordkill": {
                 "name": "Power Word Kill",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "9",
                 "school": "enchantment",
                 "time": "1-action",
@@ -2736,7 +2737,7 @@ module.exports = {
             },
             "powerwordstun": {
                 "name": "Power Word Stun",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "8",
                 "school": "enchantment",
                 "time": "1-action",
@@ -2748,7 +2749,7 @@ module.exports = {
             },
             "prayerofhealing": {
                 "name": "Prayer of Healing",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "2",
                 "school": "evocation",
                 "time": "10-minutes",
@@ -2761,7 +2762,7 @@ module.exports = {
             },
             "prestidigation": {
                 "name": "Prestidigitation",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "cantrip",
                 "cantrip": true,
                 "school": "transmutation",
@@ -2777,7 +2778,7 @@ module.exports = {
             },
             "prismaticspray": {
                 "name": "Prismatic Spray",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "7",
                 "school": "evocation",
                 "time": "1-action",
@@ -2793,7 +2794,7 @@ module.exports = {
             },
             "prismaticwall": {
                 "name": "Prismatic Wall",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "9",
                 "school": "abjuration",
                 "time": "1-action",
@@ -2810,7 +2811,7 @@ module.exports = {
             },
             "produceflame": {
                 "name": "Produce Flame",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "cantrip",
                 "cantrip": true,
                 "school": "conjuration",
@@ -2824,7 +2825,7 @@ module.exports = {
             },
             "programmedillusion": {
                 "name": "Programmed Illusion",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "6",
                 "school": "illusion",
                 "time": "1-action",
@@ -2836,7 +2837,7 @@ module.exports = {
             },
             "projectimage": {
                 "name": "Project Image",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "7",
                 "school": "illusion",
                 "time": "1-action",
@@ -2849,7 +2850,7 @@ module.exports = {
             },
             "protectionfromenergy": {
                 "name": "Protection from Energy",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "3",
                 "school": "abjuration",
                 "time": "1-action",
@@ -2862,7 +2863,7 @@ module.exports = {
             },
             "protectionfromgoodandevil": {
                 "name": "Protection from Evil and Good",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "1",
                 "school": "abjuration",
                 "time": "1-action",
@@ -2875,7 +2876,7 @@ module.exports = {
             },
             "protectionfrompoison": {
                 "name": "Protection from Poison",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "2",
                 "school": "abjuration",
                 "time": "1-action",
@@ -2887,7 +2888,7 @@ module.exports = {
             },
             "purifyfoodanddrink": {
                 "name": "Purify Food and Drink",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "1",
                 "school": "transmutation",
                 "ritual": true,
@@ -2900,7 +2901,7 @@ module.exports = {
             },
             "raisedead": {
                 "name": "Raise Dead",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "5",
                 "school": "necromancy",
                 "time": "1-hour",
@@ -2912,7 +2913,7 @@ module.exports = {
             },
             "rayofenfeeblement": {
                 "name": "Ray of Enfeeblement",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "2",
                 "school": "necromancy",
                 "time": "1-action",
@@ -2925,7 +2926,7 @@ module.exports = {
             },
             "rayoffrost": {
                 "name": "Ray of Frost",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "cantrip",
                 "cantrip": true,
                 "school": "evocation",
@@ -2938,7 +2939,7 @@ module.exports = {
             },
             "regenerate":{
                 "name": "Regenerate",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "7",
                 "school": "transmutation",
                 "time": "1-minute",
@@ -2950,7 +2951,7 @@ module.exports = {
             },
             "reincarnate": {
                 "name": "Reincarnate",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "5",
                 "school": "transmutation",
                 "time": "1-hour",
@@ -3011,7 +3012,7 @@ module.exports = {
             },
             "removecurse": {
                 "name": "Remove Curse",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "3",
                 "school": "abjuration",
                 "time": "1-action",
@@ -3023,7 +3024,7 @@ module.exports = {
             },
             "resistance": {
                 "name": "Resistance",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "cantrip",
                 "cantrip": true,
                 "school": "abjuration",
@@ -3037,7 +3038,7 @@ module.exports = {
             },
             "resurrection":{
                 "name": "Resurrection",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "7",
                 "school": "necromancy",
                 "time": "1-hour",
@@ -3049,7 +3050,7 @@ module.exports = {
             },
             "reversegravity": {
                 "name": "Reverse Gravity",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "7",
                 "school": "transmutation",
                 "time": "1-action",
@@ -3062,7 +3063,7 @@ module.exports = {
             },
             "revivify": {
                 "name": "Revivify",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "3",
                 "school": "necromancy",
                 "time": "1-action",
@@ -3074,7 +3075,7 @@ module.exports = {
             },
             "ropetrick": {
                 "name": "Rope Trick",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "2",
                 "school": "transmutation",
                 "time": "1-action",
@@ -3087,7 +3088,7 @@ module.exports = {
             },
             "sacredflame": {
                 "name": "Sacred Flame",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "cantrip",
                 "cantrip": true,
                 "school": "evocation",
@@ -3102,7 +3103,7 @@ module.exports = {
             },
             "sanctuary": {
                 "name": "Sanctuary",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "1",
                 "school": "abjuration",
                 "time": "1-bonus-action",
@@ -3114,7 +3115,7 @@ module.exports = {
             },
             "scorchingray": {
                 "name": "Scorching Ray",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "2",
                 "school": "evocation",
                 "time": "1-action",
@@ -3126,7 +3127,7 @@ module.exports = {
             },
             "scrying": {
                 "name": "Scrying",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "5",
                 "school": "divination",
                 "time": "10-minutes",
@@ -3139,7 +3140,7 @@ module.exports = {
             },
             "seeinvisibility": {
                 "name": "See Invisibility",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "2",
                 "school": "divination",
                 "time": "1-action",
@@ -3151,7 +3152,7 @@ module.exports = {
             },
             "seeming": {
                 "name": "Seeming",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "5",
                 "school": "illusion",
                 "time": "1-action",
@@ -3163,7 +3164,7 @@ module.exports = {
             },
             "sending": {
                 "name": "Sending",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "3",
                 "school": "evocation",
                 "time": "1-action",
@@ -3175,7 +3176,7 @@ module.exports = {
             },
             "sequester": {
                 "name": "Sequester",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "7",
                 "school": "transmutation",
                 "time": "1-action",
@@ -3188,7 +3189,7 @@ module.exports = {
             },
             "shapechange": {
                 "name": "Shapechange",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "9",
                 "school": "transmutation",
                 "time": "1-action",
@@ -3201,7 +3202,7 @@ module.exports = {
             },
             "shatter": {
                 "name": "Shatter",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "2",
                 "school": "evocation",
                 "time": "1-action",
@@ -3213,7 +3214,7 @@ module.exports = {
             },
             "shield": {
                 "name": "Shield",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "1",
                 "school": "abjuration",
                 "time": "1-reaction",
@@ -3225,7 +3226,7 @@ module.exports = {
             },
             "shieldoffaith": {
                 "name": "Shield of Faith",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "1",
                 "school": "abjuration",
                 "time": "1-bonus-action",
@@ -3238,7 +3239,7 @@ module.exports = {
             },
             "shillelagh": {
                 "name": "Shillelagh",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "cantrip",
                 "cantrip": true,
                 "school": "transmutation",
@@ -3252,7 +3253,7 @@ module.exports = {
             },
             "shockinggrasp": {
                 "name": "Shocking Grasp",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "cantrip",
                 "cantrip": true,
                 "school": "evocation",
@@ -3265,7 +3266,7 @@ module.exports = {
             },
             "silence": {
                 "name": "Silence",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "2",
                 "school": "illusion",
                 "ritual": true,
@@ -3279,7 +3280,7 @@ module.exports = {
             },
             "silentimage": {
                 "name": "Silent Image",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "1",
                 "school": "illusion",
                 "time": "1-action",
@@ -3292,7 +3293,7 @@ module.exports = {
             },
             "simulacrum": {
                 "name": "Simulacrum",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "7",
                 "school": "illusion",
                 "time": "12-hours",
@@ -3304,7 +3305,7 @@ module.exports = {
             },
             "sleep": {
                 "name": "Sleep",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "1",
                 "school": "enchantment",
                 "time": "1-action",
@@ -3316,7 +3317,7 @@ module.exports = {
             },
             "sleetstorm": {
                 "name": "Sleet Storm",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "3",
                 "school": "conjuration",
                 "time": "1-action",
@@ -3329,7 +3330,7 @@ module.exports = {
             },
             "slow": {
                 "name": "Slow",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "3",
                 "school": "transmutation",
                 "time": "1-action",
@@ -3342,7 +3343,7 @@ module.exports = {
             },
             "sparethedying": {
                 "name": "Spare the Dying",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "cantrip",
                 "cantrip": true,
                 "school": "necromancy",
@@ -3356,7 +3357,7 @@ module.exports = {
             },
             "speakwithanimals": {
                 "name": "Speak with Animals",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "1",
                 "school": "divination",
                 "ritual": true,
@@ -3369,7 +3370,7 @@ module.exports = {
             },
             "speakwithdead": {
                 "name": "Speak with Dead",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "3",
                 "school": "necromancy",
                 "time": "1-action",
@@ -3381,7 +3382,7 @@ module.exports = {
             },
             "speakwithplants": {
                 "name": "Speak with Plants",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "3",
                 "school": "transmutation",
                 "time": "1-action",
@@ -3393,7 +3394,7 @@ module.exports = {
             },
             "spiderclimb": {
                 "name": "Spider Climb",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "2",
                 "school": "transmutation",
                 "time": "1-action",
@@ -3406,7 +3407,7 @@ module.exports = {
             },
             "spikegrowth": {
                 "name": "Spike Growth",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "2",
                 "school": "transmutation",
                 "time": "1-action",
@@ -3419,7 +3420,7 @@ module.exports = {
             },
             "spiritguardians": {
                 "name": "Spirit Guardians",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "3",
                 "school": "conjuration",
                 "time": "1-action",
@@ -3433,7 +3434,7 @@ module.exports = {
             },
             "spiritualweapon": {
                 "name": "Spiritual Weapon",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "2",
                 "school": "evocation",
                 "time": "1-bonus-action",
@@ -3445,7 +3446,7 @@ module.exports = {
             },
             "stinkingcloud": {
                 "name": "Stinking Cloud",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "3",
                 "school": "conjuration",
                 "time": "1-action",
@@ -3458,7 +3459,7 @@ module.exports = {
             },
             "stoneshape": {
                 "name": "Stone Shape",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "4",
                 "school": "transmutation",
                 "time": "1-action",
@@ -3470,7 +3471,7 @@ module.exports = {
             },
             "stoneskin": {
                 "name": "Stoneskin",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "4",
                 "school": "abjuration",
                 "time": "1-action",
@@ -3483,7 +3484,7 @@ module.exports = {
             },
             "stormofvengence": {
                 "name": "Storm of Vengeance",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "9",
                 "school": "conjuration",
                 "time": "1-action",
@@ -3501,7 +3502,7 @@ module.exports = {
             },
             "suggestion": {
                 "name": "Suggestion",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "2",
                 "school": "enchantment",
                 "time": "1-action",
@@ -3514,7 +3515,7 @@ module.exports = {
             },
             "sunbeam": {
                 "name": "Sunbeam",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "6",
                 "school": "evocation",
                 "time": "1-action",
@@ -3528,7 +3529,7 @@ module.exports = {
             },
             "sunburst": {
                 "name": "Sunburst",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "8",
                 "school": "evocation",
                 "time": "1-action",
@@ -3541,7 +3542,7 @@ module.exports = {
             },
             "symbol": {
                 "name": "Symbol",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "7",
                 "school": "abjuration",
                 "time": "1-minute",
@@ -3557,7 +3558,7 @@ module.exports = {
             },
             "telekenisis": {
                 "name": "Telekinesis",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "5",
                 "school": "transmutation",
                 "time": "1-action",
@@ -3570,7 +3571,7 @@ module.exports = {
             },
             "teleport": {
                 "name": "Teleport",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "7",
                 "school": "conjuration",
                 "time": "1-action",
@@ -3612,7 +3613,7 @@ module.exports = {
             },
             "teleportationcircle": {
                 "name": "Teleportation Circle",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "5",
                 "school": "conjuration",
                 "time": "1-minute",
@@ -3624,7 +3625,7 @@ module.exports = {
             },
             "thaumaturgy": {
                 "name": "Thaumaturgy",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "cantrip",
                 "cantrip": true,
                 "school": "transmutation",
@@ -3641,7 +3642,7 @@ module.exports = {
             },
             "thunderwave": {
                 "name": "Thunderwave",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "1",
                 "school": "evocation",
                 "time": "1-action",
@@ -3653,7 +3654,7 @@ module.exports = {
             },
             "timesstop": {
                 "name": "Time Stop",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "9",
                 "school": "transmutation",
                 "time": "1-action",
@@ -3665,7 +3666,7 @@ module.exports = {
             },
             "tongues": {
                 "name": "Tongues",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "3",
                 "school": "divination",
                 "time": "1-action",
@@ -3677,7 +3678,7 @@ module.exports = {
             },
             "transportviaplants": {
                 "name": "Transport via Plants",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "6",
                 "school": "conjuration",
                 "time": "1-action",
@@ -3690,7 +3691,7 @@ module.exports = {
             },
             "treestride": {
                 "name": "Tree Stride",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "5",
                 "school": "conjuration",
                 "time": "1-action",
@@ -3703,7 +3704,7 @@ module.exports = {
             },
             "truepolymorph": {
                 "name": "True Polymorph",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "9",
                 "school": "transmutation",
                 "time": "1-action",
@@ -3716,7 +3717,7 @@ module.exports = {
             },
             "trueresurrection": {
                 "name": "True Resurrection",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "9",
                 "school": "necromancy",
                 "time": "1-hour",
@@ -3728,7 +3729,7 @@ module.exports = {
             },
             "trueseeing": {
                 "name": "True Seeing",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "6",
                 "school": "divination",
                 "time": "1-action",
@@ -3740,7 +3741,7 @@ module.exports = {
             },
             "truestrike": {
                 "name": "True Strike",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "cantrip",
                 "cantrip": true,
                 "school": "divination",
@@ -3754,7 +3755,7 @@ module.exports = {
             },
             "unseenservant": {
                 "name": "Unseen Servant",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "1",
                 "school": "conjuration",
                 "ritual": true,
@@ -3767,7 +3768,7 @@ module.exports = {
             },
             "vampiricservant": {
                 "name": "Vampiric Touch",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "3",
                 "school": "necromancy",
                 "time": "1-action",
@@ -3781,7 +3782,7 @@ module.exports = {
             },
             "viciousmokery": {
                 "name": "Vicious Mockery",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "cantrip",
                 "cantrip": true,
                 "school": "enchantment",
@@ -3795,7 +3796,7 @@ module.exports = {
             },
             "walloffire": {
                 "name": "Wall of Fire",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "4",
                 "school": "evocation",
                 "time": "1-action",
@@ -3808,7 +3809,7 @@ module.exports = {
             },
             "wallofforce": {
                 "name": "Wall of Force",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "5",
                 "school": "evocation",
                 "time": "1-action",
@@ -3822,7 +3823,7 @@ module.exports = {
             },
             "wallofice": {
                 "name": "Wall of Ice",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "6",
                 "school": "evocation",
                 "time": "1-action",
@@ -3836,7 +3837,7 @@ module.exports = {
             },
             "wallofstone": {
                 "name": "Wall of Stone",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "5",
                 "school": "evocation",
                 "time": "1-action",
@@ -3849,7 +3850,7 @@ module.exports = {
             },
             "wallofthorns": {
                 "name": "Wall of Thorns",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "6",
                 "school": "conjuration",
                 "time": "1-action",
@@ -3863,7 +3864,7 @@ module.exports = {
             },
             "wardingbond": {
                 "name": "Warding Bond",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "2",
                 "school": "abjuration",
                 "time": "1-action",
@@ -3875,7 +3876,7 @@ module.exports = {
             },
             "waterbreathing": {
                 "name": "Water Breathing",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "3",
                 "school": "transmutation",
                 "ritual": true,
@@ -3888,7 +3889,7 @@ module.exports = {
             },
             "waterwalk": {
                 "name": "Water Walk",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "3",
                 "school": "transmutation",
                 "ritual": true,
@@ -3901,7 +3902,7 @@ module.exports = {
             },
             "web": {
                 "name": "Web",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "2",
                 "school": "conjuration",
                 "time": "1-action",
@@ -3914,7 +3915,7 @@ module.exports = {
             },
             "weird": {
                 "name": "Weird",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "9",
                 "school": "illusion",
                 "time": "1-action",
@@ -3927,7 +3928,7 @@ module.exports = {
             },
             "windwalk": {
                 "name": "Wind Walk",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "6",
                 "school": "transmutation",
                 "time": "1-minute",
@@ -3940,7 +3941,7 @@ module.exports = {
             },
             "windwall": {
                 "name": "Wind Wall",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "3",
                 "school": "evocation",
                 "time": "1-action",
@@ -3953,7 +3954,7 @@ module.exports = {
             },
             "wish": {
                 "name": "Wish",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "9",
                 "school": "conjuration",
                 "time": "1-action",
@@ -3969,7 +3970,7 @@ module.exports = {
             },
             "wordofrecall": {
                 "name": "Word of Recall",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "6",
                 "school": "conjuration",
                 "time": "1-action",
@@ -3982,7 +3983,7 @@ module.exports = {
             },
             "zoneoftruth": {
                 "name": "Zone of Truth",
-                "source": "Player_s-Handbook",
+                "source": "Player's-Handbook",
                 "level": "2",
                 "school": "enchantment",
                 "time": "1-action",
@@ -4014,7 +4015,20 @@ module.exports = {
             let spellComponents = JSON.stringify(spellComponents1)
             let spellDuration = JSON.stringify(spellDuration1)
             let spellText = JSON.stringify(spellText1)
-            message.channel.send("Name: " + spellName + "\nSpell Source: " + spellSource + "\nSpell Level: " + spellLevel + "\nSpell School: " + spellSchool + "\nSpell Time to Cast: " + spellTime + "\nSpell Range: " + spellRange + "\nSpell Components: " + spellComponents + "\nSpell Duration: " + spellDuration + "\nSpell Text: " + spellText);
+            const spellEmbed = new Discord.MessageEmbed()
+                .setColor('#1eacb0')
+                .setTitle('Info on ' + spellName1)
+                .setDescription('Sourced from' + spellSource)
+                .addFields(
+                    { name: 'Name: ', value: spellName },
+                    { name: 'Spell Level: ', value: spellLevel },
+                    { name: 'Spell School: ', value: spellSchool},
+                    { name: 'Spell Action Time: ', value: spellTime},
+                    { name: 'Components Needed: ', value: spellComponents},
+                    { name: 'Duration of Spell: ', value: spellDuration},
+                    { name: 'Additional Text', value: spellText}
+                )
+                message.channel.send(spellEmbed)
 
         }
     }
