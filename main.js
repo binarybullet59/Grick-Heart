@@ -37,11 +37,13 @@ client.on('message', message =>{
         client.commands.get('roll').execute(message, args);
     } if(command === 'spell'){
         client.commands.get('spell').execute(message, args);
-    } else if(command === 'help'){
+    } if(command === 'init'){
+        client.commands.get('init').execute(message, args);
+    }else if(command === 'help'){
         client.commands.get('help').execute(message, args);
     }
 });
  
-client.login(' --INSERT TOKEN HERE-- ');
+client.login('NzgwODExNjQ2OTgxMTExODQ4.X70hgw.j9hcX58ZFvZbRTe6xZq5sbLZy9g');
  
  
