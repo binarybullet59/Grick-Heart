@@ -4,10 +4,8 @@
   "description": "a dnd discord bot",
   "main": "main.js",
   "dependencies": {
-    "chalk": "^4.1.0",
     "discord.js": "^12.4.1",
-    "enmap": "^5.8.2",
-    "moment": "^2.29.1"
+    "enmap": "^5.8.2"
   },
   "devDependencies": {},
   "scripts": {
