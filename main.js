@@ -1,49 +1,34 @@
-const Discord = require('discord.js');
+const Discord = require("discord.js");
+const Enmap = require("enmap");
+const fs = require("fs");
+
 const client = new Discord.Client();
- 
-const prefix = '!';
- 
-const fs = require('fs');
- 
-client.commands = new Discord.Collection();
- 
-const commandFiles = fs.readdirSync('./commands/').filter(file => file.endsWith('.js'));
-for(const file of commandFiles){
-    const command = require(`./commands/${file}`);
- 
-    client.commands.set(command.name, command);
-}
- 
- 
-client.once('ready', () => {
-    console.log('Grick Heart is online!');
-    console.log(`Logged in as ${client.user.tag}!`);
-    client.user.setActivity('Waterdeep: Dungeon of the Mad Mage', { type: 'PLAYING' }, { link: 'https://dnd.wizards.com/products/tabletop-games/rpg-products/waterdeep-dungeon-mad-mage'})
-    .then(presence => console.log(`Activity set to ${presence.activities[0].name}`))
-    .catch(console.error);
+const config = require("./config.json");
+client.config = config;
+
+fs.readdir("./events/", (err, files) => {
+  if (err) return console.error(err);
+  files.forEach(file => {
+    const event = require(`./events/${file}`);
+    let eventName = file.split(".")[0];
+    client.on(eventName, event.bind(null, client));
+  });
 });
- 
-client.on('message', message =>{
-    if(!message.content.startsWith(prefix) || message.author.bot) return;
- 
-    const args = message.content.slice(prefix.length).split(/ +/);
-    const command = args.shift().toLowerCase();
- 
-    if(command === 'tableadd'){
-        client.commands.get('tableadd').execute(message, args);
-    } if(command === 'tableremove'){
-        client.commands.get('tableremove').execute(message, args);
-    } if(command === 'roll'){
-        client.commands.get('roll').execute(message, args);
-    } if(command === 'spell'){
-        client.commands.get('spell').execute(message, args);
-    } if(command === 'init'){
-        client.commands.get('init').execute(message, args);
-    }else if(command === 'help'){
-        client.commands.get('help').execute(message, args);
-    }
+
+client.commands = new Enmap();
+
+fs.readdir("./commands/", (err, files) => {
+  if (err) return console.error(err);
+  files.forEach(file => {
+    if (!file.endsWith(".js")) return;
+    let props = require(`./commands/${file}`);
+    let commandName = file.split(".")[0];
+    console.log(`Attempting to load command ${commandName}`);
+    client.commands.set(commandName, props);
+    console.log(`Successfully loaded command ${commandName}`);
+  });
 });
- 
-client.login(' --INSERT TOKEN HERE-- ');
+
+client.login(config.token);
  
  
