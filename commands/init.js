@@ -55,7 +55,7 @@ module.exports ={
                     .setTitle('Help for Initative (Player version)')
                     .setDescription('How to use the Initiative command')
                     .addFields(
-                        { name: 'Rolling for initiative: ', value: "When you see ```@ everyone, please roll for initiative, execute ```!init roll <modifiers>``` to get you initiative number" },
+                        { name: 'Rolling for initiative: ', value: "When you see ```@ everyone, please roll for initiative``` execute: ```!init roll <modifiers>``` to get you initiative number" },
                         { name: 'Additional Help: ', value: "Contact your DM for more information regarding how your initiative works"},
                     )
                 message.author.send(helpEmbedPL)
