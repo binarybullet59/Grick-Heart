@@ -22,7 +22,7 @@ module.exports = {
                         // An error happened
                         // This is generally due to the bot not being able to add the member,
                         // either due to missing permissions or role hierarchy
-                        message.reply('I was unable to add the member');
+                        message.reply('I was unable to add the member due to an error');
                         // Log the error
                         console.error(err);
                     });
@@ -53,7 +53,7 @@ module.exports = {
                         // An error happened
                         // This is generally due to the bot not being able to add the member,
                         // either due to missing permissions or role hierarchy
-                        message.reply('I was unable to remove the member');
+                        message.reply('I was unable to remove the member due to an error');
                         // Log the error
                         console.error(err);
                     });
