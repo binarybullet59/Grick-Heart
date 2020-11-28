@@ -1,3 +1,5 @@
+if (Number(process.version.slice(1).split(".")[0]) < 8) throw new Error("Node 8.0.0 or higher is required. Update Node on your system.");
+
 const Discord = require("discord.js");
 const Enmap = require("enmap");
 const fs = require("fs");
@@ -16,6 +18,7 @@ fs.readdir("./events/", (err, files) => {
 });
 
 client.commands = new Enmap();
+client.aliases = new Enmap();
 
 fs.readdir("./commands/", (err, files) => {
   if (err) return console.error(err);
