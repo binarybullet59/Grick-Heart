@@ -19,11 +19,11 @@ module.exports = {
                 )
                 .addField("Finding a spell", "use ```!spell <spellname>``` to find a spell from the archive", true)
                 .addFields(
-                    { name: "Rolling Dice", value: "Help with the 'roll' command"},
+                    { name: "Rolling Dice:", value: "Help with the 'roll' command"},
                 )
                 .addField("Getting a dice roll", "use ```!roll d<4,6,8,10,12,20,100>``` to get the appropriate dice roll", true)
                 .addFields(
-                    { name: "Managing Players on the Game Table", value: "Help with the 'table' command"},
+                    { name: "Managing Players on the Game Table:", value: "Help with the 'table' command"},
                 )
                 .addField("Adding Players", "use ```!table add <player>``` to add someone to the table", true)
                 .addField("Removing Players", "use ```!table remove <player>``` to remove someone from the table", true)
@@ -46,7 +46,7 @@ module.exports = {
                 )
                 .addField("Finding a spell", "use ```!spell <spellname>``` to find a spell from the archive", true)
                 .addFields(
-                    { name: "Rolling Dice", value: "Help with the 'roll' command"},
+                    { name: "Rolling Dice:", value: "Help with the 'roll' command"},
                 )
                 .addField("Getting a dice roll", "use ```!roll d<4,6,8,10,12,20,100>``` to get the appropriate dice roll", true)
                 .addFields(
