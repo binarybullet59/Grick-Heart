@@ -3,7 +3,7 @@ module.exports ={
     name: "init",
     description: "this command handles game initative",
     args:  true,
-    aliases: ['init'],
+    aliases: ['initiative'],
     execute(message, args){
         let noPerms = "You don't have permission to do that!"
         if (!args.length) {
@@ -65,9 +65,9 @@ module.exports ={
         }
         if (args[0] === 'roll') {
             if (message.member.roles.cache.find(r => r.name === "Game Access")) {
-                if (!args[1]) {
+                if (!args[1].length) {
                     let modifiers = 0
-                } else {
+                } if (args[1].length) {
                     let modifiers = args[1]
                 }
                 let initiativeNumber = Math.floor(Math.random() * Math.floor(19)+ 1 + modifiers)
