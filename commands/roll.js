@@ -1,9 +1,13 @@
+Logger = require('../modules/logger');
+logger = new Logger('main');
+
 module.exports = {
     name: 'roll',
     description: "this command rolls dice!",
     execute(message, args){
         if (!args.length) {
-            return message.reply(`You didn't provide any arguments!`);
+            message.reply(`You didn't provide any arguments!`);
+            logger.error('No arguements provided in roll command');
         } if (args[0] === 'd4') {
             let roll = Math.floor(Math.random() * Math.floor(3)) + 1;
             message.reply(`You rolled a ` + roll + `!`);

@@ -7,6 +7,8 @@ const fs = require("fs");
 const client = new Discord.Client();
 const config = require("./config.json");
 client.config = config;
+Logger = require('./modules/logger');
+client.logger = new Logger('main');
 
 fs.readdir("./events/", (err, files) => {
   if (err) return console.error(err);
@@ -21,14 +23,14 @@ client.commands = new Enmap();
 client.aliases = new Enmap();
 
 fs.readdir("./commands/", (err, files) => {
-  if (err) return console.error(err);
+  if (err) return client.logger.error(err);
   files.forEach(file => {
     if (!file.endsWith(".js")) return;
     let props = require(`./commands/${file}`);
     let commandName = file.split(".")[0];
-    console.log(`Attempting to load command ${commandName}`);
+    client.logger.info(`Attempting to load command ${commandName}`);
     client.commands.set(commandName, props);
-    console.log(`Successfully loaded command ${commandName}`);
+    client.logger.info(`Successfully loaded command ${commandName}`);
   });
 });
 
