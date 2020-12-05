@@ -1,3 +1,6 @@
+Logger = require('../modules/logger');
+logger = new Logger('main');
+
 module.exports = {
     name: 'table',
     description: "this controls access to the table",
@@ -24,7 +27,7 @@ module.exports = {
                         // either due to missing permissions or role hierarchy
                         message.reply('I was unable to add the member due to an error');
                         // Log the error
-                        console.error(err);
+                        logger.error(err);
                     });
                 } else {
                     // The mentioned user isn't in this guild
@@ -33,6 +36,7 @@ module.exports = {
                 // Otherwise, if no user was mentioned
                 } else {
                 message.reply("You didn't mention the user to add!");
+                logger.error('No arguements provided in !table command');
                 }
             } if (args[0] === "remove") {
                 let gAccess = message.guild.roles.cache.find(role => role.name === "Game Access");
@@ -55,7 +59,7 @@ module.exports = {
                         // either due to missing permissions or role hierarchy
                         message.reply('I was unable to remove the member due to an error');
                         // Log the error
-                        console.error(err);
+                        logger.error(err);
                     });
                 } else {
                     // The mentioned user isn't in this guild
@@ -64,6 +68,7 @@ module.exports = {
                 // Otherwise, if no user was mentioned
                 } else {
                 message.reply("You didn't mention the user to remove!");
+                logger.error('No arguements provided in !table command');
                 }
             }
             

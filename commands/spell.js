@@ -3995,7 +3995,9 @@ module.exports = {
             }
         }
         if (!args.length) {
-            return message.reply(`You didn't provide any arguments!`);
+            message.reply(`You didn't provide any arguments!`);
+            logger.error('No arguements provided in !spell command');
+            return
         } else if (args[0] === args[0]) {
             let spellName1 = data[args[0]].name
             let spellSource1 = data[args[0]].source
