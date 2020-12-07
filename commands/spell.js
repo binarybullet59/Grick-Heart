@@ -1,5 +1,5 @@
 const Discord = require('discord.js')
-const data = require('../assets/dnd-data/spells/spells.json')
+const data = require('../dnd-data/spells/spells.json')
 module.exports = {
     name: 'spell',
     description: "This command looks up spells",
