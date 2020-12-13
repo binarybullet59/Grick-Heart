@@ -8,6 +8,8 @@
     "discord.js": "^12.4.1",
     "enmap": "^5.8.2",
     "express": "^4.17.1",
+    "node-fetch": "^2.6.1",
+    "request": "^2.88.2",
     "winston": "^3.3.3"
   },
   "devDependencies": {},
