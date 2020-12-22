@@ -15,3 +15,9 @@ Grick Heart currently has a few commands:
 # Contributing
 
 All contributions are welcome so long as they help the project in meaningful way. Please only PR to the develop branch though.
+
+# Support
+
+Join our discord or create an issue for support
+
+LINK: https://discord.gg/BNhNSe9Dkh
