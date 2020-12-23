@@ -20,4 +20,4 @@ All contributions are welcome so long as they help the project in meaningful way
 
 Join our discord or create an issue for support
 
-LINK: https://discord.gg/BNhNSe9Dkh
+LINK: https://discord.gg/vgmsVm2wbt
