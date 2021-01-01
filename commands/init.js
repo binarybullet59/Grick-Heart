@@ -50,11 +50,11 @@ module.exports ={
                     .setTitle('Help for Initative (DM version)')
                     .setDescription('How to use the Initiative command')
                     .addFields(
-                        { name: 'Starting the Round: ', value: "use ```!init start``` to start the round" },
-                        { name: 'Stoping the Round: ', value: "use ```!init stop``` to stop the round" },
-                        { name: 'Reseting the Order: ', value: "use ```!init reset``` to reset the round" },
-                        { name: 'Checking the Order: ', value: "use ```!init list``` to get the initiative list for this round" },
-                        { name: 'Additional Help: ', value: "After ```!init start``` the players will need to do ```!initiative roll <modifiers>``` to get their initiative rolled"},
+                        { name: 'Starting the Round: ', value: "use ``!init start`` to start the round" },
+                        { name: 'Stoping the Round: ', value: "use ``!init stop`` to stop the round" },
+                        { name: 'Reseting the Order: ', value: "use ``!init reset`` to reset the round" },
+                        { name: 'Checking the Order: ', value: "use ``!init list`` to get the initiative list for this round" },
+                        { name: 'Additional Help: ', value: "After ``!init start`` the players will need to do ``!initiative roll <modifiers>`` to get their initiative rolled"},
                     )
                 message.author.send(helpEmbedDM)
             } if (message.member.roles.cache.find(r => r.name === "Game Access")) {
@@ -63,8 +63,8 @@ module.exports ={
                     .setTitle('Help for Initative (Player version)')
                     .setDescription('How to use the Initiative command')
                     .addFields(
-                        { name: 'Rolling for initiative: ', value: "When you see ```@ everyone, please roll for initiative``` execute: ```!init roll <modifiers>``` to get you initiative number" },
-                        { name: 'Checking the Order: ', value: "use ```!init list``` to get the initiative list for this round" },
+                        { name: 'Rolling for initiative: ', value: "When you see ``@ everyone, please roll for initiative`` execute: ``!init roll <modifiers>`` to get you initiative number" },
+                        { name: 'Checking the Order: ', value: "use ``!init list`` to get the initiative list for this round" },
                         { name: 'Additional Help: ', value: "Contact your DM for more information regarding how your initiative works"},
                     )
                 message.author.send(helpEmbedPL)
