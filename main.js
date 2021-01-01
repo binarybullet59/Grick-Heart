@@ -19,6 +19,7 @@ client.logger.info(`Starting Grick Heart version ${GHversion.version} running No
 if (Number(process.version.slice(1).split(".")[0]) < 12) {
   let errorN = new Error("Node 12.0.0 or higher is required. Update Node on your system.");
   client.logger.error(errorN)
+  return;
 }
 
 request(url, options, (error, res, body) => {
