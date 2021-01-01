@@ -30,8 +30,12 @@ request(url, options, (error, res, body) => {
   if (!error && res.statusCode == 200) {
     let GHversion = require("./package.json")
     if (body.version > GHversion.version) {
-      console.log("**************** YOU ARE RUNNING A OLD VERSION OF GRICK HEART ****************")
-      console.log(`******* YOU ARE RUNNING VERSION ${GHversion.version}. LATEST VERSION IS VERSION ${body.version} *******`)
+      logger.info("**************** YOU ARE RUNNING A OLD VERSION OF GRICK HEART ****************")
+      logger.info(`******* YOU ARE RUNNING VERSION ${GHversion.version}. LATEST VERSION IS VERSION ${body.version} *******`)
+    }
+    if (body.version < GHversion.version) {
+      logger.info("***************** YOU ARE RUNNING A BETA VERSION OF GRICK HEART ******************")
+      logger.info(`*** THIS VERSION COULD HAVE FATAL BUGS AND IS NOT VALIDATED FOR PRODUCTION USE ***`)
     }
   }
 })
