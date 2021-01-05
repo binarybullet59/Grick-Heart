@@ -7,7 +7,7 @@ module.exports = {
             const helpEmbedDM = new Discord.MessageEmbed()
                 .setColor('#1eacb0')
                 .setTitle('Help is here!')
-                .setDescription('How to use Grick Heart! (For DMs)')
+                .setDescription('How to use Grick Heart! (For DMs)' (hi there))
                 .addFields(
                     { name: 'Initiative: ', value: "Help with 'init' command"},
                 )
